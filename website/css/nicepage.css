@@ -1,0 +1,52 @@
+html, body, div, h1, h2, h3, p, span, a {
+    margin:0;
+    border: 0;
+    padding: 0;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+body
+{
+    background-image:url('../images/bluetop.png');
+    background-repeat:repeat-x;
+}
+
+#top {
+    /* true height 165 */
+    height: 165px;
+}
+/* I need midbottom to have a gray background but i can't seem to do it */
+#midbottom {
+    background-color: rgb(237, 237, 237);
+
+    background-image:url('../images/midbottom.png');
+    background-repeat:repeat-x;
+}
+#bottom {
+    /* true height 46 */
+    height: 46px;
+    background-image:url('../images/bottom.png');
+    background-repeat:repeat-x;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24pt;
+    color: #FFF;
+    text-shadow: 0 2px 0 black;
+    margin: 20px 0 0 20px;
+}
+#midtop {
+    height: 4em;
+}
+
+/* position stuff */
+#midtopcontents, #midbottomcontents {
+    margin-left : 20px;
+}
+
+#bottom >p {
+    text-align: center;
+    color: #FFF;
+    line-height: 44px;
+}

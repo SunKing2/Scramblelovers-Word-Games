@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html><head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>3d test</title> 
+ 
+<style type="text/css" media="all"> 
+ 
+ 
+body {
+    margin:0;
+    border:0;
+    padding: 0;
+}
+
+body {
+    -moz-user-select:none;
+    user-select:none;
+
+/*
+    -moz-text-size-adjust:none;
+    text-size-adjust:none;
+*/
+    font-size: 6em;
+
+    background-color:#D2AEFE;
+}
+
+#rotate {
+    position:absolute;
+    width: 600px;
+    height: 600px;
+
+    -moz-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+
+    -moz-animation-name:rotate;
+    animation-name:rotate;
+
+    -moz-animation-duration:20s;
+    animation-duration:5s;
+
+    -moz-animation-timing-function:linear;
+    animation-timing-function:linear;
+
+    -moz-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+
+    -moz-transform-origin:50% 50% 50px;
+    transform-origin:50% 50% 50px;
+}
+.wrapper {
+    position:absolute;
+    top:50%; left:50%;
+
+    -moz-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+
+    -moz-perspective:1000;
+    perspective:1000;
+}
+
+.wrapper div {
+    position:absolute;
+
+   /* louie made visible*/
+    -moz-backface-visibility:visible;
+/*
+    backface-visibility:hidden;
+*/
+
+    width:100px; height:100px;
+    background:url(images/wood1.png);
+    background-size:100px 100px;
+}
+
+.wrapper.tex2 div {
+    background:url(images/wood2.png);
+}
+
+.wrapper.tex3 div {
+    background:url(images/wood3.png);
+}
+
+.wrapper.tex4 div {
+    background:url(images/wood4.png);
+}
+
+.side1 {
+    -moz-transform:rotateY(90deg) rotateZ(-90deg) translate3d(0,0,100px);
+    transform:rotateY(90deg) rotateZ(-90deg) translate3d(0,0,100px);
+
+    -moz-transform-origin:0 100% 0;
+    transform-origin:0 100% 0;
+}
+
+.side2 {
+    -moz-transform:rotateY(-90deg) rotateZ(90deg) translate3d(0,-100px,0);
+    transform:rotateY(-90deg) rotateZ(90deg) translate3d(0,-100px,0);
+
+    -moz-transform-origin:0 0 0;
+    transform-origin:0 0 0;
+}
+/* roof */
+.side3 {
+    background:url(images/wood5.png) !important;
+
+    -moz-transform:translate3d(0,0,100px);
+    transform:translate3d(0,0,100px);
+}
+
+.side4 {
+    -moz-transform:rotateX(90deg) rotateZ(180deg) translate3d(100px,-100px,0);
+    transform:rotateX(90deg) rotateZ(180deg) translate3d(100px,-100px,0);
+
+    -moz-transform-origin:100% 0;
+    transform-origin:100% 0;
+}
+
+.side5 {
+    -moz-transform:rotateX(-90deg);
+    transform:rotateX(-90deg);
+
+    -moz-transform-origin:0 100%;
+    transform-origin:0 100%;
+}
+/* louie added this one  by copying 3*/
+.side6 {
+    background:url(images/front3.png) !important;
+    -moz-transform:translate3d(0, 0 ,0);
+}
+
+@-moz-keyframes rotate {
+    from { -moz-transform: rotateY(0) rotateX(0); }
+    to { -moz-transform: rotateY(360deg) rotateX(360deg); }
+}
+@keyframes rotate {
+    from { transform: rotateY(0) rotateX(0); }
+    to { transform: rotateY(360deg) rotateX(360deg); }
+}
+</style> 
+</head> 
+<body>
+<div id="rotate">
+<div class="wrapper">
+    <div class="side1">1</div>
+</div>
+<div class="wrapper tex2">
+    <div class="side2">2</div>
+</div>
+<div class="wrapper tex3">
+    <div class="side3">3</div>
+</div>
+<div class="wrapper tex4">
+    <div class="side4">4</div>
+</div>
+<div class="wrapper tex5">
+    <div class="side5">5</div>
+</div>
+<div class="wrapper tex6">
+    <div class="side6">6</div>
+</div>
+
+<div class="wrapper tex2" style="top:30%;left:30%">
+    <div class="side1"></div>
+    <div class="side2"></div>
+    <div class="side3"></div>
+    <div class="side4"></div>
+    <div class="side5"></div>
+    <div class="side6"></div>
+</div>
+
+
+</div>
+ 
+</body></html>
