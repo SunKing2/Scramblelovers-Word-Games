@@ -1,0 +1,6 @@
+Scramblelovers-Word-Games
+
+* git clone git@github.com:SunKing2/Scramblelovers-Word-Games.git
+* cd 'Scramblelovers Word Games'
+* install maven
+* mvn package
