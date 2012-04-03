@@ -1,6 +1,9 @@
 Scramblelovers-Word-Games
 
 * git clone git@github.com:SunKing2/Scramblelovers-Word-Games.git
-* cd 'Scramblelovers Word Games'
+* cd 'Scramblelovers Word Games/scramble'
 * install maven
 * mvn package
+* (I'm using Glassfish as a server, you can probably get away with Tomcat for awhile)
+* copy the war to your server and hop to 
+http://localhost:8080/scramble
