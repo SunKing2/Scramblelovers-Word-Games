@@ -1,0 +1,21 @@
+20120412
+ 01 Title: A new player would like to meet and communicate with new and known players
+
+ Description: A player enters  a central location.  She can tell who is there right away.  There may be 0 or more players she recognizes and 0 or more players she doesn't recognize.  It's also possible that when she arrives, nobody is there.  The players who are there can tell instantly when she entered the room.  Any player player can talk to her at any time after she enters.  She can talk to any player at any time after she enters.  These conversations needn't be private between the two parties; it might be more social to have everyone 'hear' the conversations.
+
+ a.Story: As a player I want to be able to enter a room where others may be present so that I can socialize
+ b.Story: As a website owner, I want a place where people can gather to socialize online
+ c.Story: As a player I want to be able to know when somebody has just entered the room so that I can socialize with them
+ d.Story: As a player I want to know who has just entered the room so that I can socialize with her
+ e.Story: As a player I want to know who is in the room when I enter it so that I can socialize with them
+ f.Story: As a player I want to be able to talk to anyone in the room so that I can enjoy other people's company.
+ g.Story: As a player I want to be able to talk to a person entering the room so that I can enjoy the other person's company.
+ h.Story: As a player, I want to enter a room and see nobody is there so that I can choose to wait for others to join, or choose to leave
+ i.Story: As a player, I want to be able to talk to any other player so that I can socialize with them
+ j.Story: As a player, I want to be able to receive anything that any other player is telling me so that I can have an opportunity to socialize with them
+ k.Story: As a player, I want to be able to hear conversations between players so that I can increase the possibilities of socializing
+ l.Story: As a player, I want to be able to determine if I know the other players in the room when I enter the room
+
+
+ 02 Title: A single user can create a really negative experience for others
+ Description:  A player is in the room making extremely obscene comments or demeaning insults directed at a player.  The player may also be flooding the game with spam (Denial of service).  These behaviors are not wanted by the other players, and there needs to be a way to prevent these situations.
