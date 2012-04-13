@@ -29,14 +29,12 @@ function writeHeaderThenHtml(response, statusCode, html) {
 http.createServer(function (request, response) {
   try {
     var sHtml = fileReader.readFileAsString(START_PAGE_REF);
-    console.log('read fine');
-    console.log('len is:' + sHtml.length);
     writeHeaderThenHtml(response, 200, sHtml);
-    log.log(200, START_PAGE_REF);
+    console.log(log.log(200, START_PAGE_REF));
   }
   catch (err) {
     writeHeaderThenHtml(response, 401, 'oopsy, not found');      
-    log.log(401, START_PAGE_REF);
+    console.log(log.log(401, START_PAGE_REF));
   }
 }).listen(SOCKET, IP);
 console.log('Server running at http://' + IP + ':' + SOCKET + 
