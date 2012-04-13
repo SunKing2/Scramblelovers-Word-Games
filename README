@@ -4,6 +4,13 @@ Scramblelovers-Word-Games
 * cd 'Scramblelovers Word Games/scramble'
 * install maven
 * mvn package
+* ...
+* Then do choose either Java or node, and do one of the following:
+* hop to node directory
+* node webserver.js
+* http://localhost:8080
+* or
+* with java
 * (I'm using Glassfish as a server, you can probably get away with Tomcat for awhile)
 * copy the war to your server and hop to 
 http://localhost:8080/scramble
