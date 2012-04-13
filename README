@@ -7,3 +7,5 @@ Scramblelovers-Word-Games
 * (I'm using Glassfish as a server, you can probably get away with Tomcat for awhile)
 * copy the war to your server and hop to 
 http://localhost:8080/scramble
+
+Please look in the design directory to see what we are working on.  Minimally, we'll create a new document in there each day.
